@@ -49,16 +49,16 @@ window.config(bg=BACKGROUND_COLOR)
 
 
 # Canvas setup
-canvas = Canvas(height=526, width=800, bg=BACKGROUND_COLOR, highlightthickness=0)
+canvas = Canvas(height=326, width=400, bg=BACKGROUND_COLOR, highlightthickness=0)
 # canvas images
 bg_front = PhotoImage(file="images/card_front.png")
 bg_back = PhotoImage(file="images/card_back.png")
-canvas_image = canvas.create_image(405, 263, image=bg_front)
+canvas_image = canvas.create_image(305, 163, image=bg_front)
 # place canvas
 canvas.grid(row=0, column=0, columnspan=2, pady=30, padx=50)
 # insert text
-title = canvas.create_text(400, 150, font=("arial", 40, "italic"), text="French")
-word = canvas.create_text(400, 253, font=("arial", 60, "bold"), text="Trouve")
+title = canvas.create_text(200, 120, font=("arial", 25, "italic"), text="French")
+word = canvas.create_text(200, 180, font=("arial", 45, "bold"), text="Trouve")
 
 
 # Buttons
